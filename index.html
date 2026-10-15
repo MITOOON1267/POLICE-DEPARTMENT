@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d17">
+  <meta name="description" content="City 警察部門の公式ルールブック">
+  <title>POLICE RULES | City</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="brand">
+      <span class="brand-icon">N</span>
+      <span>
+        <strong>CITY</strong>
+        <small>POLICE DEPARTMENT</small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="メニューを開く" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">HOME</a>
+      <a href="#rules">RULES</a>
+      <a href="#contact">CONTACT</a>
+      <a href="https://discord.com/" target="_blank"
+        rel="noopener noreferrer">DISCORD ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">CITY GOVERNMENT</span>
+        <p class="hero-label">POLICE DEPARTMENT</p>
+        <h1>警察部門<br><span>RULE BOOK</span></h1>
+        <p class="hero-description">
+          街の秩序を守り、市民の安全を確保する。<br>
+          すべての警察官が遵守すべき行動規範。
+        </p>
+        <a class="primary-button" href="#rules">
+          ルールを確認する <span>→</span>
+        </a>
+      </div>
+      <div class="hero-number">NCPD / 001</div>
+    </section>
+
+    <section class="notice container">
+      <div class="notice-icon">!</div>
+      <div>
+        <strong>警察官向け重要事項</strong>
+        <p>勤務開始前に必ず各ルールを確認してください。
+          未確認による違反も処罰の対象となる場合があります。</p>
+      </div>
+    </section>
+
+    <section class="container rules-section" id="rules">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OFFICIAL DOCUMENTS</span>
+          <h2>警察ルール一覧</h2>
+          <p>必要なルールを検索し、カテゴリ別に確認できます。</p>
+        </div>
+        <span class="document-count" id="documentCount">RULES / 00</span>
+      </div>
+
+      <div class="search-box">
+        <span>⌕</span>
+        <input id="searchInput" type="search"
+          placeholder="ルールを検索... 例：逮捕、武器、無線"
+          aria-label="ルールを検索">
+        <button id="clearSearch" type="button" aria-label="検索をクリア">×</button>
+      </div>
+
+      <div class="category-list" id="categoryList">
+        <button class="category active" data-category="all">すべて</button>
+        <button class="category" data-category="basic">基本規則</button>
+        <button class="category" data-category="duty">職務執行</button>
+        <button class="category" data-category="crime">犯罪対応</button>
+        <button class="category" data-category="equipment">装備・車両</button>
+        <button class="category" data-category="rank">階級・指揮</button>
+      </div>
+
+      <div class="rules-list" id="rulesList"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p>該当するルールが見つかりませんでした。</p>
+        <button id="resetSearch" class="text-button">検索をリセット</button>
+      </div>
+    </section>
+
+    <section class="container policy-section">
+      <div class="policy-card">
+        <span class="eyebrow">OUR PRINCIPLE</span>
+        <h2>法と秩序を、<br>すべての市民のために。</h2>
+        <p>
+          警察官は権限を正しく理解し、公平かつ冷静に職務を遂行する。
+          個人の判断だけでなく、組織の規則と指揮命令系統を尊重する。
+        </p>
+      </div>
+    </section>
+
+    <section class="container contact-section" id="contact">
+      <span class="eyebrow">SUPPORT / INQUIRY</span>
+      <h2>不明点・ルールに関する相談</h2>
+      <p>判断に迷う場合は、上官または運営指定の窓口に相談してください。</p>
+      <a class="secondary-button" href="https://discord.com/"
+        target="_blank" rel="noopener noreferrer">
+        Discordを開く ↗
+      </a>
+      <p class="small-note">※ Discordのリンクは実際のサーバーURLに変更してください。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="footer-brand">CITY <span>POLICE</span></a>
+    <p>Unofficial sample template for City.</p>
+    <p>© City Police Department</p>
+  </footer>
+</body>
+</html>
